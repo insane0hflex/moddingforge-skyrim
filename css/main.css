@@ -1,0 +1,55 @@
+/* ==========================================================================
+   My custom styles
+   ========================================================================== */
+
+body
+{
+    color: #000;
+    overflow-y: scroll;
+}
+
+footer
+{
+    text-align:center;
+}
+
+.caption h3
+{
+    font-variant:small-caps;
+    font-family: TrajanPro;
+    margin-top:-40px;
+    text-align:center;
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                  1px 1px 0 #000;
+}
+
+.thumbnail
+{
+    padding:0px;
+}
+
+.jumbotron
+{
+    padding-bottom:5px;
+}
+
+/* add scrollbar to main page; all other pages have scrollbar i think */
+html
+{
+   overflow-y: scroll;
+}
+
+tr:nth-child(even)
+{
+    background-color:  #f9f9f9;
+}
+/* used on tables heading */
+.panel-heading
+{
+    font-weight: bold;
+    font-size: large;
+    color: #111;
+}
