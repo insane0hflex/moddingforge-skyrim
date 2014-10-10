@@ -11,6 +11,10 @@ footer {
     text-align:center;
 }
 
+a {
+    color: #306ECB;
+}
+
 .my-footer {
     background-color: #eee; border-top: 1px solid #aaaaaa;
 }
@@ -25,6 +29,23 @@ footer {
                   1px -1px 0 #000,
                  -1px 1px 0 #000,
                   1px 1px 0 #000;
+}
+
+#carousel-example-generic {
+    border: 1px solid #aaaaaa;
+}
+
+.carousel-caption {
+    font-family: TrajanPro;
+}
+
+.container {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+:first-child.container {
+    border: none;
 }
 
 .thumbnail {
@@ -56,6 +77,11 @@ td {
     font-weight: bold;
     font-size: large;
     color: #111;
+}
+
+.panel-paragraph {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* for flat look on navbar */
@@ -107,12 +133,7 @@ border-radius: 0px;
 }
 
 
-/* remove border radius (flat ui look) from thumbnail imgs */
-.thumbnail {
-    border-radius: 0px;
-}
-
-
+/* remove border radius from everything! */
 * {
     border-radius: 0px !important;
 }
