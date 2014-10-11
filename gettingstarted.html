@@ -6,9 +6,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>moddingforge-skyrim</title>
-    <meta name="description" content="A guide on how to install mods for Skyrim.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ModdingForge-Skyrim</title>
+    <meta name="author" content="insane0hflex, insaneOhflex, sputternaut" />
+    <meta name="description" content="Skyrim modding guide featuring the best mods for Skyrim and tutorials." />
+    <meta name="keywords" content="skyrim mods, moddingforge, modding forge, modding forge skyrim, insane0hflex, insaneOhflex" />    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="img/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
@@ -38,10 +39,10 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
                            <li><a href="index.html"><img src="img/65px-Citizen.png" height="25" width="25">Home</a></li>
-           <li  class="active"><a href="gettingstarted.html"><img src="img/65px-Reader.png" height="25" width="25">Getting Started</a></li>
+            <li class="active"><a href="gettingstarted.html"><img src="img/65px-Reader.png" height="25" width="25">Getting Started</a></li>
                            <li><a href="essential.html"><img src="img/65px-Taking_Care_of_Business.png" height="25" width="25">The Essentials</a></li>
                            <li><a href="moremods.html"><img src="img/65px-Thief.png" height="25" width="25">More Notable Mods</a></li>
-                           <li><a href="partners.html"><img src=   "img/65px-Elder_Knowledge.png" height="25" width="25">Other Resources</a></li>
+                           <li><a href="partners.html"><img src="img/65px-Elder_Knowledge.png" height="25" width="25">Other Resources</a></li>
                            <li><a href="about.html"><img src="img/65px-Golden_Touch.png" height="25" width="25">About</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
@@ -58,31 +59,40 @@
 <p>The "Getting started" section is aimed at people that are not familiar with modding Skyrim or other Bethesda games (such as Fallout: NV, or Oblivion, for example). Most mods require certain other mods, like <a href="#SKSE">SKSE</a> for giving mods improved scripting capabilities, or SkyUI for the Mod Configuration Menu (MCM).</p>
 
 <p>The mods listed on this page do not change gameplay mechanics or graphics. Most of the items listed here are utilities and tools to let Skyrim mods have more features and work correctly.</p>
+<p><strong>Before you proceed complete the following steps:</strong></p>
+    <ol>
+        <li>
+            First of all, if you just downloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, then start the game. Now exit Skyrim. This is to insure that Skyrim generates it's <code>.ini</code> files correctly.
+        </li>
+        <li>
+            Then, you will need to create a Nexus Account. This website is where most of the Skyrim modding community upload their mods to. Set up a Nexus account here: 
+            <a href="https://forums.nexusmods.com/index.php?app=core&module=global&section=register" target="_blank">NexusMods Registration</a>. Making a Nexus account is free, just don't choose a donation/support option (skip to the "Create Account" button at the bottom of the page). You can always donate later if you wish to support the site.
+        </li>
+    </ol>
 
-<p>First of all, if you just redownloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, then start the game. Now exit Skyrim. This is to insure that Skyrim generates it's <code>.ini</code> files correctly.</p>
-
+    <hr />
 <!--<p><strong>Note:</strong> If you don't like the Skyrim Nexus, most of the mods in this post are also available on the Steam Workshop.</p>-->
 
-<p>Tools/Utilities listed here:</p>
+<h4>Skyrim Modding Tools and Utilities listed here:</h4>
 <ul class="list-group">
     <li class="list-group-item"><a href="#SKSE">Skyrim Script Extender - SKSE</a></li>
     <li class="list-group-item"><a href="#BOSS">Better Oblivion Sorting Software - BOSS</a></li>
     <li class="list-group-item"><a href="#NMM">Nexus Mod Manager - NMM</a></li>
     <li class="list-group-item"><a href="#SkyUI">SkyUI</a></li>
-    <li class="list-group-item"><a href="#TES5Edit">TES5Edit</a></li>
     <li class="list-group-item"><a href="#WryeBash">WryeBash</a></li>
+    <li class="list-group-item"><a href="#TES5Edit">TES5Edit</a></li>
     <li class="list-group-item"><a href="#initweaks">Skyrim.ini Tweaks</a></li>
     <li class="list-group-item"><a href="#initweaks2">Skyrimprefs.ini Tweaks</a></li>
 </ul>
 
 <h3 id="SKSE">Skyrim Script Extender (SKSE)</h3>
 <p>Next, you will need Skyrim Script Extender (SKSE). Download SKSE here <a href="http://skse.silverlock.org/">http://skse.silverlock.org/</a>. From now on, you will start Skyrim by using skse_loader.exe, otherwise SKSE will not be instantiated. Again, you will <em>NOT</em> start Skyrim by clicking in Steam. Personally, I make a shortcut to skse_loader.exe then pin that to the start menu. You will know if SKSE is working properly if you have a SKSE message in the top-left of the screen when starting Skyrim, as shown in <a href="" target="_blank">this screenshot</a>.</p>
-    <p>After you download SKSE and install SKSE,</p>
+  <p>After you download SKSE and install SKSE, </p>
 <hr>
 
 <h3 id="BOSS">Better Oblivion Sorting Software (BOSS)</h3>
-<p>Then, get <a target="_blank" href="http://boss-developers.github.io/">BOSS</a> - to keep your mods properly "load-ordered", to improve performance and reduce CTDs due to improper mod load order. Install your mods with NMM, then after that run BOSS to sort the mods. However, do pay attention to each mod that you do download to see if it needs to be loaded last, or above/below another mod, as the BOSS masterlist of mods is updated on a regular basis but is not 100% precise.</p>
-<p>If you are interested in trying a newer version of BOSS, check out <a href="http://loot.github.io/" target="_blank">LOOT</a> which stands for: Load Order Optimisation Tool. This is still in BETA. I suggest staying with using BOSS.</p>
+<p>Even though this software is called "Better <em><strong>Oblivion</strong></em> Sorting Software", it works great for Skyrim. Download it here: <a target="_blank" href="http://boss-developers.github.io/">BOSS</a> - to keep your mods properly "load-ordered", to improve performance and reduce CTDs due to improper mod load order. Install your mods with NMM, then after that run BOSS to sort the mods. However, do pay attention to each mod that you do download to see if it needs to be loaded last, or above/below another mod, as the BOSS masterlist of mods is updated on a regular basis but is not 100% precise.</p>
+<p>If you are interested in trying a newer version of BOSS, check out <a href="http://loot.github.io/" target="_blank">LOOT</a> which stands for: Load Order Optimisation Tool. This is still in BETA. I recommend staying with using BOSS.</p>
 <hr>
 
 <h3 id="NMM">Nexus Mod Manager (NMM)</h3>
@@ -93,14 +103,12 @@
 <p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/3863">SkyUI</a> is an absolute must have. The changes to the UI are keyboard and mouse friendly, and has excellent controller support for those that play with a controller. Also included in SkyUI is the amazing Mod Configuration Menu, where you can change mods settings in game (as long as the mod has MCM support, of course).</p>
 <hr />
 
-<h3 id="TES5Edit">TES5Edit</h3>
-<p>TES5Edit is a tool that I have not used extensively, but mod creator's do use TES5Edit to remove bad data/record changes they made by accident, and to "clean" their mod. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.</p>
-<hr />
-
 <h3 id="WryeBash">WryeBash</h3>
 <p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/"></a>Wrye Bash is a tool that was used heavily in modding Oblivion. You can still use it to be a mod installer/organizer of sorts, but it's main feature we want to use is the <strong>Bashed Patch</strong>. With the <strong>Bashed Patch</strong> we can merge mods leveled lists together. With this feature, you'll be able to see the loot from both Immersive Armors and Immersive Weapons in the leveled list. If you do not create a Bashed Patch, but install a several mods that use leveled lists, only the last mod loaded in the load order will influence the leveled list.</p>
 <p>TLDR; Create a Bashed Patch with Wrye Bash so you get to see items in different mods leveled lists in game (ie: merge leveled lists).</p>
+
 <strong>Steps to create a Bashed Patch with Wrye Bash:</strong>
+
 <ul>
     <li>Scroll down the mod list and right-click <strong>Bashed Patch, 0.esp</strong> and select <strong>Rebuild Patch</strong>.</li>
     <li>A popup asking to deactive mods prior to patching may appear. If it does, simply click [OK]. This will deactivate said mod file and it will be merged into the bashed patch.
@@ -114,6 +122,9 @@ Check only "Merge Patches", "Import Names", "Import Stats", "Tweak Settings", an
 
 <hr>
 
+<h3 id="TES5Edit">TES5Edit</h3>
+<p>TES5Edit is a tool that I have not used extensively, but mod creator's do use TES5Edit to remove bad data/record changes they made by accident, and to "clean" their mod. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.</p>
+<hr />
 
 <!-- SKYRIM INI TWEAKS -->
 <h3 id="initweaks">Skyrim.ini Tweaks</h3>
