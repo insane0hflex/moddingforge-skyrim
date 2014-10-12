@@ -38,7 +38,10 @@ a {
 .carousel-caption {
     font-family: TrajanPro;
 }
-
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+}
 .container {
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;

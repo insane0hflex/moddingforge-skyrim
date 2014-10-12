@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker copy.png" height="25" width="25"><strong>moddingforge</strong></a>
+          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker copy.png" height="25" width="25"><strong>ModdingForge</strong></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -56,17 +56,21 @@
     <h1>Getting Starting</h1>
 </div>
 
-<p>The "Getting started" section is aimed at people that are not familiar with modding Skyrim or other Bethesda games (such as Fallout: NV, or Oblivion, for example). Most mods require certain other mods, like <a href="#SKSE">SKSE</a> for giving mods improved scripting capabilities, or SkyUI for the Mod Configuration Menu (MCM).</p>
+<p>The "Getting started" section is aimed at people that are not familiar with modding Skyrim or other Bethesda games (like Oblivion or Fallout New Vegas). Most mods require certain other mods, like <a href="#SKSE">SKSE</a> for giving mods improved scripting capabilities, or SkyUI for the Mod Configuration Menu (MCM).</p>
 
-<p>The mods listed on this page do not change gameplay mechanics or graphics. Most of the items listed here are utilities and tools to let Skyrim mods have more features and work correctly.</p>
+<p>The items listed on this page are utilities and tools to let Skyrim mods have more features and work correctly. Skyrim.ini and SkyrimPrefs.ini tweaks are also discussed here.</p>
+
 <p><strong>Before you proceed complete the following steps:</strong></p>
     <ol>
         <li>
-            First of all, if you just downloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, then start the game. Now exit Skyrim. This is to insure that Skyrim generates it's <code>.ini</code> files correctly.
+            Know where your Skyrim installation is located. Usually this is something like: <code>C:\Program Files (x86)\Steam\steamapps\common\skyrim\Data</code><br />
+            I suggest you bookmark this folder.
         </li>
         <li>
-            Then, you will need to create a Nexus Account. This website is where most of the Skyrim modding community upload their mods to. Set up a Nexus account here: 
-            <a href="https://forums.nexusmods.com/index.php?app=core&module=global&section=register" target="_blank">NexusMods Registration</a>. Making a Nexus account is free, just don't choose a donation/support option (skip to the "Create Account" button at the bottom of the page). You can always donate later if you wish to support the site.
+           Next, if you just downloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, then start the game. Now exit Skyrim. This is to insure that Skyrim generates the <code>Skyrim.ini</code> <code>SkyrimPrefs.ini</code> files correctly.
+        </li>
+        <li>
+            Then, you will need to create a <a href="https://forums.nexusmods.com/index.php?app=core&module=global&section=register" target="_blank">NexusMods Account</a>. This website is where most of the Skyrim modding community upload their mods to. Making a Nexus account is free, just don't choose a donation/support option (skip to the "Create Account" button at the bottom of the page). You can always donate later if you wish to support the site.
         </li>
     </ol>
 
@@ -76,24 +80,40 @@
 <h4>Skyrim Modding Tools and Utilities listed here:</h4>
 <ul class="list-group">
     <li class="list-group-item"><a href="#SKSE">Skyrim Script Extender - SKSE</a></li>
-    <li class="list-group-item"><a href="#BOSS">Better Oblivion Sorting Software - BOSS</a></li>
+    <!--<li class="list-group-item"><a href="#BOSS">Better Oblivion Sorting Software - BOSS</a></li>-->
+    <li class="list-group-item"><a href="#LOOT">LOOT - Load Order Optimization Tool</a></li>
     <li class="list-group-item"><a href="#NMM">Nexus Mod Manager - NMM</a></li>
     <li class="list-group-item"><a href="#SkyUI">SkyUI</a></li>
     <li class="list-group-item"><a href="#WryeBash">WryeBash</a></li>
     <li class="list-group-item"><a href="#TES5Edit">TES5Edit</a></li>
     <li class="list-group-item"><a href="#initweaks">Skyrim.ini Tweaks</a></li>
     <li class="list-group-item"><a href="#initweaks2">Skyrimprefs.ini Tweaks</a></li>
+    <li class="list-group-item"><a href="#misc">Miscellaneous Information</a></li>
 </ul>
 
 <h3 id="SKSE">Skyrim Script Extender (SKSE)</h3>
 <p>Next, you will need Skyrim Script Extender (SKSE). Download SKSE here <a href="http://skse.silverlock.org/">http://skse.silverlock.org/</a>. From now on, you will start Skyrim by using skse_loader.exe, otherwise SKSE will not be instantiated. Again, you will <em>NOT</em> start Skyrim by clicking in Steam. Personally, I make a shortcut to skse_loader.exe then pin that to the start menu. You will know if SKSE is working properly if you have a SKSE message in the top-left of the screen when starting Skyrim, as shown in <a href="" target="_blank">this screenshot</a>.</p>
-  <p>After you download SKSE and install SKSE, </p>
+  <p>After you download SKSE and install SKSE, go to your /skyrim/Data/ folder. Create a new folder called "SKSE". Within this new folder, make a new text file named "skse.ini". </p>
+    <p>In order to enable sheshon's memory fix, put into the new <code>skse.ini</code> file you create the following code:
+<pre>[General]
+ClearInvalidRegistrations=1
+
+[Memory]
+DefaultHeapInitialAllocMB=768
+ScrapHeapSizeMB=256</pre>
+   </p>
 <hr>
 
-<h3 id="BOSS">Better Oblivion Sorting Software (BOSS)</h3>
+<!--<h3 id="BOSS">Better Oblivion Sorting Software (BOSS)</h3>
 <p>Even though this software is called "Better <em><strong>Oblivion</strong></em> Sorting Software", it works great for Skyrim. Download it here: <a target="_blank" href="http://boss-developers.github.io/">BOSS</a> - to keep your mods properly "load-ordered", to improve performance and reduce CTDs due to improper mod load order. Install your mods with NMM, then after that run BOSS to sort the mods. However, do pay attention to each mod that you do download to see if it needs to be loaded last, or above/below another mod, as the BOSS masterlist of mods is updated on a regular basis but is not 100% precise.</p>
 <p>If you are interested in trying a newer version of BOSS, check out <a href="http://loot.github.io/" target="_blank">LOOT</a> which stands for: Load Order Optimisation Tool. This is still in BETA. I recommend staying with using BOSS.</p>
+<hr>-->
+
+<h3 id="LOOT">Load Order Optimization Software (LOOT)</h3>
+<p>to keep your mods properly "load-ordered", to improve performance and reduce CTDs due to improper mod load order. Install your mods with NMM, then after that run BOSS to sort the mods. However, do pay attention to each mod that you do download to see if it needs to be loaded last, or above/below another mod, as the BOSS masterlist of mods is updated on a regular basis but is not 100% precise.</p>
+<p>If you are interested in trying a newer version of BOSS, check out <a href="http://loot.github.io/" target="_blank">LOOT</a> which stands for: Load Order Optimisation Tool. This is still in BETA. I recommend staying with using BOSS.</p>
 <hr>
+
 
 <h3 id="NMM">Nexus Mod Manager (NMM)</h3>
 <p>Now, to easily install most of these mods, get the <a href="http://skyrim.nexusmods.com/mods/modmanager/">Nexus Mod Manager (NMM)</a>. With NMM, you can download mods with a click of a button from the Skyrim Nexus website, then install/uninstall mods with the NMM program, as well as configure your load order. Not required since you can always install mods manually, but NMM is highly recommended because of the automated installation process.</p>
@@ -104,32 +124,38 @@
 <hr />
 
 <h3 id="WryeBash">WryeBash</h3>
-<p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/"></a>Wrye Bash is a tool that was used heavily in modding Oblivion. You can still use it to be a mod installer/organizer of sorts, but it's main feature we want to use is the <strong>Bashed Patch</strong>. With the <strong>Bashed Patch</strong> we can merge mods leveled lists together. With this feature, you'll be able to see the loot from both Immersive Armors and Immersive Weapons in the leveled list. If you do not create a Bashed Patch, but install a several mods that use leveled lists, only the last mod loaded in the load order will influence the leveled list.</p>
-<p>TLDR; Create a Bashed Patch with Wrye Bash so you get to see items in different mods leveled lists in game (ie: merge leveled lists).</p>
+<p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/?">Wrye Bash</a> was a tool that was used heavily for modding Oblivion. You can still use it to be a mod installer/organizer of sorts, but it's main feature we want to use is the <strong>Bashed Patch</strong> feature. With the <strong>Bashed Patch</strong> feature, we can merge the leveled lists of mods together. What this means is that you'll be able to see the loot from both Immersive Armors and Immersive Weapons in game. If you do not create a Bashed Patch, but install a several mods that use leveled lists, only the last mod loaded in the load order will influence the leveled list.</p>
+<p>Therefore, we want to create a Bashed Patch with Wrye Bash so you get to see items in different mods leveled lists in game (ie: merge leveled lists).</p>
 
 <strong>Steps to create a Bashed Patch with Wrye Bash:</strong>
 
-<ul>
-    <li>Scroll down the mod list and right-click <strong>Bashed Patch, 0.esp</strong> and select <strong>Rebuild Patch</strong>.</li>
+<ol>
+    <li>On the "Mods" tab, scroll down the mod list and right-click <strong>Bashed Patch, 0.esp</strong> and select <strong>Rebuild Patch</strong>.</li>
     <li>A popup asking to deactive mods prior to patching may appear. If it does, simply click [OK]. This will deactivate said mod file and it will be merged into the bashed patch.
 Check only "Merge Patches", "Import Names", "Import Stats", "Tweak Settings", and "Leveled Lists" in the left pane.</li>
     <li>Click on "Tweak Settings" in the left pane.</li>
     <li>Click on "Leveled Lists" in the left pane.</li>
     <li>Click [Build Patch] at the bottom of the window. A dialogue asking you to activate it may appear, click [Yes].</li>
-</ul>
+</ol>
 
-<p>The Bashed Patch, 0.esp is now generated into your skyrim/data folder, and should <strong>always</strong> be loaded last!</p>
+<p>The Bashed Patch, 0.esp is now generated into your /skyrim/Data/ folder, and should <strong>always</strong> be loaded last!</p>
 
 <hr>
 
 <h3 id="TES5Edit">TES5Edit</h3>
-<p>TES5Edit is a tool that I have not used extensively, but mod creator's do use TES5Edit to remove bad data/record changes they made by accident, and to "clean" their mod. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.</p>
+<p>TES5Edit is a tool that I have not used extensively, but mod creator's do use TES5Edit to remove bad data/record changes ("dirty edits") that were made by accident. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.</p>
+<p>You can use it to remove the dirty edits that Bethesda left in Skyrim.esm for example, or other mods you download, but in my experience TES5Edit is for more advanced users.</p>
 <hr />
+
+
 
 <!-- SKYRIM INI TWEAKS -->
 <h3 id="initweaks">Skyrim.ini Tweaks</h3>
 
-<p>Change these the Skyrim.ini file with a text editing program (such as Notepad) to tweak certain settings. The text in brackets (eg [General]) is that section's header.</p>
+<p>Edit Skrim.ini with a text editing program with the following tweaks. Some tweaks are recommended, others are optional. The text in brackets (eg [General]) is that section's header.</p>
+
+<p>The location of this file, by default, is something like this: <br />
+    <code>C:\Users\YOUR_USER_NAME\Documents\My Games\Skyrim\</code></p>
 
 <p><strong>Disable the intro video/logo splash.</strong> - Shave off a few seconds when Starting up Skyrim! Either delete the intro.bik video file in Skyrim's Skyrim/data/video folder, or you can do this .ini tweak in the [General] section.</p>
 <em>Recommended</em>
@@ -139,11 +165,10 @@ sIntroSequence=
 </pre>
 
 
-<p><strong>Field of View (FoV)</strong> - Increase your FoV with this tweak. Default is 65, IIRC. I usually rock 70-75 degrees because I mainly play in 3rd person, and sit farther back. If you like to play in first person more often, you will probably want to increase your FoV to 75 degrees or more.</p>
-<p>If you'd like, you can learn more about FoV <a href="http://en.wikipedia.org/wiki/Field_of_view_in_video_games" target="_blank">here</a> and <a href="http://en.wikipedia.org/wiki/Field_of_view" target="_blank">here</a>.</p>
+<p><strong>Field of View (FoV)</strong> - Increase your <a href="http://en.wikipedia.org/wiki/Field_of_view_in_video_games" target="_blank">FoV</a> with this tweak. Default is 65, IIRC. I usually rock 70-75 degrees because I mainly play in 3rd person, and sit farther back. If you like to play in first person more often, you will probably want to increase your FoV to 75 degrees or more.</p>
 <em>Recommended</em>
 <pre>
-[Display]<br>
+[Display]
 fDefault1stPersonFOV=75.0
 fDefaultWorldFOV=75.0
 </pre>
@@ -187,9 +212,15 @@ fFlickeringLightDistance=4096
 
 <hr>
 
+
+
 <!-- SKYRIM PREFS INI -->
 <h3 id="initweaks2">SkyrimPrefs.ini</h3>
 <p>Change these the Skyrim.ini file with a text editing program (such as Notepad) to tweak certain settings. The text in brackets (eg [General]) is that section's header.</p>
+    
+<p>The location of this file, by default, is something like this: <br />
+<code>C:\Users\YOUR_USER_NAME\Documents\My Games\Skyrim\</code></p>
+    
 <p>SkyrimPrefs.ini has parameters that control other configuration options in Skyrim. Much like editing Skyrim.ini in the section before, these tweaks are optional.</p>
 
 <p><strong>For ENB users only - bFloatPointRenderTarget</strong> - This tweak is required for ENBs to properly use floating point rendering which allows the enhanced graphical effects, such as SSAO, DoF and more. Setting this to <code>1</code> will cause a small performance hit.</p>
@@ -231,19 +262,23 @@ fGrassStartFadeDistance=18000
 bMouseAcceleration=0
 </pre>
 
-<!-- MISC INFORMATION -->
 <hr>
 
 
-<h3 id="Misc">Misc. Information</h3>
-<p>Curious about what types of files (.esp. .bsa, .dds, etc) you're seeing/using? Check out <a href="http://wiki.step-project.com/Guide:Skyrim_Installation#Mod_Filetypes_and_Directories">http://wiki.step-project.com/Guide:Skyrim_Installation#Mod_Filetypes_and_Directories</a>.</p>
 
-<p><strong>Bad performance?</strong></p>
-Disable HD texture mods if your video card does not have much VRAM. Another thing to decrease are shadow settings, then resolution. Both of these are the main hogs of performance. Also, if you use an ENB, you may want to tone the ENB graphical effects down, or turn them off completely.
+<!-- MISC INFORMATION -->
+
+<h3 id="misc">Miscellaneous Information</h3>
+<p>
+    Curious about what types of files (.esp. .bsa, .dds, etc) you're seeing/using? Check out <a href="http://wiki.step-project.com/Guide:Skyrim_Installation#Mod_Filetypes_and_Directories">http://wiki.step-project.com/Guide:Skyrim_Installation#Mod_Filetypes_and_Directories</a>.
+</p>
+
+<p>
+    <strong>Bad performance?</strong><br />
+    Disable HD texture mods if your video card does not have much VRAM. Another thing to decrease are shadow settings, then resolution. Both of these are the main hogs of performance. Also, if you use an ENB, you may want to tone the ENB graphical effects down, or turn them off completely.
+</p>
 
 <!-- last paragraph, endorse reminder -->
-<p>As always, please remember to endorse any mod you download and if you enjoy it - its a way of giving appreciation to a modder's hard work.</p>
-
 </div> <!-- end container -->
 <br>
 
