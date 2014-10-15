@@ -34,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker copy.png" height="25" width="25"><strong>ModdingForge</strong></a>
+          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker_copy.png" height="25" width="25">&nbsp;<strong>ModdingForge</strong></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -60,42 +60,43 @@
 
 <p>The items listed on this page are utilities and tools to let Skyrim mods have more features and work correctly. Skyrim.ini and SkyrimPrefs.ini tweaks are also discussed here.</p>
 
-<p><strong>Before you proceed complete the following steps:</strong></p>
+<div class ="alert alert-warning">
+    <p><strong>Before you proceed complete the following steps:</strong></p>
     <ol>
         <li>
-            Know where your Skyrim installation is located. Usually this is something like: <code>C:\Program Files (x86)\Steam\steamapps\common\skyrim\Data</code><br />
-            I suggest you bookmark this folder.
+            Know where your Skyrim installation is located. Usually this is something like: <code>C:\Program Files (x86)\Steam\steamapps\common\skyrim</code><br />
+            I recommend that you should bookmark this folder.
         </li>
         <li>
-           Next, if you just downloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, then start the game. Now exit Skyrim. This is to insure that Skyrim generates the <code>Skyrim.ini</code> <code>SkyrimPrefs.ini</code> files correctly.
+            Next, if you just downloaded Skyrim, <strong>make sure you start the game first before modding</strong>. On the launcher, select the <strong>Ultra</strong> graphics setting, turn Antialiasing to 0(off), and also set Anistropic Filtering to 0(off), then start the game. On the main menu screen, exit Skyrim. This is to insure that Skyrim generates the <code>Skyrim.ini</code> and the <code>SkyrimPrefs.ini</code> files correctly. These are located by default here: <code>C:\Users\%YOUR_USER_NAME%\Documents\My Games\Skyrim\</code>
         </li>
         <li>
             Then, you will need to create a <a href="https://forums.nexusmods.com/index.php?app=core&module=global&section=register" target="_blank">NexusMods Account</a>. This website is where most of the Skyrim modding community upload their mods to. Making a Nexus account is free, just don't choose a donation/support option (skip to the "Create Account" button at the bottom of the page). You can always donate later if you wish to support the site.
         </li>
     </ol>
-
+</div>
     <hr />
 <!--<p><strong>Note:</strong> If you don't like the Skyrim Nexus, most of the mods in this post are also available on the Steam Workshop.</p>-->
 
-<h4>Skyrim Modding Tools and Utilities listed here:</h4>
-<ul class="list-group">
+<h2>Skyrim Modding Tools and Utilities Listed Here:</h2>
+<ul class="list-group" >
     <li class="list-group-item"><a href="#SKSE">Skyrim Script Extender - SKSE</a></li>
     <!--<li class="list-group-item"><a href="#BOSS">Better Oblivion Sorting Software - BOSS</a></li>-->
     <li class="list-group-item"><a href="#LOOT">LOOT - Load Order Optimization Tool</a></li>
     <li class="list-group-item"><a href="#NMM">Nexus Mod Manager - NMM</a></li>
-    <li class="list-group-item"><a href="#SkyUI">SkyUI</a></li>
+    <!--<li class="list-group-item"><a href="#SkyUI">SkyUI</a></li>-->
     <li class="list-group-item"><a href="#WryeBash">WryeBash</a></li>
     <li class="list-group-item"><a href="#TES5Edit">TES5Edit</a></li>
     <li class="list-group-item"><a href="#initweaks">Skyrim.ini Tweaks</a></li>
     <li class="list-group-item"><a href="#initweaks2">Skyrimprefs.ini Tweaks</a></li>
     <li class="list-group-item"><a href="#misc">Miscellaneous Information</a></li>
 </ul>
-
 <h3 id="SKSE">Skyrim Script Extender (SKSE)</h3>
 <p>Next, you will need Skyrim Script Extender (SKSE). Download SKSE here <a href="http://skse.silverlock.org/">http://skse.silverlock.org/</a>. From now on, you will start Skyrim by using skse_loader.exe, otherwise SKSE will not be instantiated. Again, you will <em>NOT</em> start Skyrim by clicking in Steam. Personally, I make a shortcut to skse_loader.exe then pin that to the start menu. You will know if SKSE is working properly if you have a SKSE message in the top-left of the screen when starting Skyrim, as shown in <a href="" target="_blank">this screenshot</a>.</p>
   <p>After you download SKSE and install SKSE, go to your /skyrim/Data/ folder. Create a new folder called "SKSE". Within this new folder, make a new text file named "skse.ini". </p>
     <p>In order to enable sheshon's memory fix, put into the new <code>skse.ini</code> file you create the following code:
-<pre>[General]
+<pre>
+[General]
 ClearInvalidRegistrations=1
 
 [Memory]
@@ -110,32 +111,67 @@ ScrapHeapSizeMB=256</pre>
 <hr>-->
 
 <h3 id="LOOT">Load Order Optimization Software (LOOT)</h3>
-<p>to keep your mods properly "load-ordered", to improve performance and reduce CTDs due to improper mod load order. Install your mods with NMM, then after that run BOSS to sort the mods. However, do pay attention to each mod that you do download to see if it needs to be loaded last, or above/below another mod, as the BOSS masterlist of mods is updated on a regular basis but is not 100% precise.</p>
-<p>If you are interested in trying a newer version of BOSS, check out <a href="http://loot.github.io/" target="_blank">LOOT</a> which stands for: Load Order Optimisation Tool. This is still in BETA. I recommend staying with using BOSS.</p>
+    <p>Description of LOOT from the <a href="http://loot.github.io/">LOOT download page</a>:</p>
+    <blockquote style="font-size: inherit; background-color:#f6f6f6;">
+        <p>Setting the right load order for your mods is a crucial step to enjoying a stable modded game. The Load Order Optimisation Tool (LOOT) can help with that, by providing automated load order sorting that's simple to use and fully customisable.
+        </p>
+        <p>
+            While sorting, LOOT checks for load order errors (such as incompatibilities and missing requirements) and notifies you of any issues that it detects. It also provides thousands of plugin-specific messages, such as usage notes and bug warnings, to help keep your game healthy.
+        </p>
+    </blockquote>    
+    <p>If you've heard about BOSS, it is no longer being supported. LOOT is the successor to BOSS.</p>
 <hr>
 
 
 <h3 id="NMM">Nexus Mod Manager (NMM)</h3>
-<p>Now, to easily install most of these mods, get the <a href="http://skyrim.nexusmods.com/mods/modmanager/">Nexus Mod Manager (NMM)</a>. With NMM, you can download mods with a click of a button from the Skyrim Nexus website, then install/uninstall mods with the NMM program, as well as configure your load order. Not required since you can always install mods manually, but NMM is highly recommended because of the automated installation process.</p>
+<p>Now, to easily install most of these mods, get the <a href="http://skyrim.nexusmods.com/mods/modmanager/">Nexus Mod Manager (NMM)</a>. With NMM, you can download mods with a click of a button from the Skyrim Nexus website, then install and uninstall mods easily. NMM is highly recommended because of the automated installation process.</p>
 <hr />
 
-<h3 id="SkyUI">SkyUI</h3>
-<p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/3863">SkyUI</a> is an absolute must have. The changes to the UI are keyboard and mouse friendly, and has excellent controller support for those that play with a controller. Also included in SkyUI is the amazing Mod Configuration Menu, where you can change mods settings in game (as long as the mod has MCM support, of course).</p>
+<!--<h3 id="SkyUI">SkyUI</h3>
+<p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/3863">SkyUI</a> is an absolute must have. The changes to the UI are keyboard and mouse friendly, and has great controller support. Also included in SkyUI is the amazing Mod Configuration Menu (MCM), where you can configure a mod's settings in game (provided the mod has a MCM options).</p>
 <hr />
+    -->
 
 <h3 id="WryeBash">WryeBash</h3>
-<p><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/?">Wrye Bash</a> was a tool that was used heavily for modding Oblivion. You can still use it to be a mod installer/organizer of sorts, but it's main feature we want to use is the <strong>Bashed Patch</strong> feature. With the <strong>Bashed Patch</strong> feature, we can merge the leveled lists of mods together. What this means is that you'll be able to see the loot from both Immersive Armors and Immersive Weapons in game. If you do not create a Bashed Patch, but install a several mods that use leveled lists, only the last mod loaded in the load order will influence the leveled list.</p>
-<p>Therefore, we want to create a Bashed Patch with Wrye Bash so you get to see items in different mods leveled lists in game (ie: merge leveled lists).</p>
+<p>WryeBash was a tool that is used mainly for modding Oblivion. You can still use it to be a mod installer/organizer of sorts for Skyrim still, but it's main feature we want to use is the <strong>Bashed Patch</strong> feature. With the <strong>Bashed Patch</strong> feature, we can merge the leveled lists of mods together. When different plugins alter the same leveled list, only the last loaded plugin's changes get applied. The leveled list patcher circumvents the issue by instead merging all the changes made to leveled lists and having this merged set of changes applied.
+</p>
+<p>You should rebuild your Bashed Patch every time you change your load order. Bashed Patch should also be last in the load order list <em>unless</em> you have plugins that explicitly state that they must be loaded last.</p>
+<p>Download the "Installer" version of <a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/?">Wrye Bash</a>.</p>
+<strong>Steps to create a Bashed Patch with Wrye Bash (do this after completing the <a href="essential.html">Essentials</a> section):</strong>
 
-<strong>Steps to create a Bashed Patch with Wrye Bash:</strong>
-
+<!-- Import Names	Oblivion only. Preserves the changes made to various names throughout the game by the mods selected.	The decision is entirely based on user preference. Choose whichever mods' names you prefer. 
+    
+    Import Stats	Oblivion only. Preserves the changes made by the mods selected to spells in order to fix bugs or rebalance them.	Always, unless you are told otherwise by a mod's readme. There is an element of user preference, for instance if you are using several mods that overhaul item stats. In such cases, choose whichever mods' stats you prefer.
+    
+    Leveled Lists	Merges changes made to leveled lists by mods to increase compatibility between them.	Always. If you don't have any mods that alter leveled lists, the option won't do anything, in which case it doesn't hurt to have it enabled.
+    -->
 <ol>
-    <li>On the "Mods" tab, scroll down the mod list and right-click <strong>Bashed Patch, 0.esp</strong> and select <strong>Rebuild Patch</strong>.</li>
-    <li>A popup asking to deactive mods prior to patching may appear. If it does, simply click [OK]. This will deactivate said mod file and it will be merged into the bashed patch.
-Check only "Merge Patches", "Import Names", "Import Stats", "Tweak Settings", and "Leveled Lists" in the left pane.</li>
-    <li>Click on "Tweak Settings" in the left pane.</li>
-    <li>Click on "Leveled Lists" in the left pane.</li>
-    <li>Click [Build Patch] at the bottom of the window. A dialogue asking you to activate it may appear, click [Yes].</li>
+    <li>
+        Run Wrye Bash.exe. On the <strong>Mods</strong> tab, select <strong>Bashed Patch, Skyrim.esp</strong>, then right-click and select <strong>Rebuild Patch</strong>.
+    </li>
+    <li>
+        Check <strong>Import Names</strong>. Make sure that all the Unofficial patches are checked.
+    </li>
+    <li>
+        Check <strong>Import Stats</strong>. Make sure that all the Unofficial patches are checked.
+    </li>
+    <li>
+        If <strong>Tweaks</strong> is checked, uncheck it.
+    </li>
+    <li>
+        Check <strong>Leveled Lists</strong>. The "Automatic" box should be checked, and you should see something like
+<pre>
+Update.esm [ADR]
+Unofficial Skyrim Patch.esp [ADR]
+etc...
+</pre>
+    </li>
+    <li>
+        Click <strong>Build Patch</strong>.
+    </li>
+    <li>
+        You're done! Don't forget that you should rebuild your Bashed Patch every time you change your load order.
+    </li>
 </ol>
 
 <p>The Bashed Patch, 0.esp is now generated into your /skyrim/Data/ folder, and should <strong>always</strong> be loaded last!</p>
@@ -165,13 +201,14 @@ sIntroSequence=
 </pre>
 
 
+<!-- Doesnt work anymore. Used to i think though...
 <p><strong>Field of View (FoV)</strong> - Increase your <a href="http://en.wikipedia.org/wiki/Field_of_view_in_video_games" target="_blank">FoV</a> with this tweak. Default is 65, IIRC. I usually rock 70-75 degrees because I mainly play in 3rd person, and sit farther back. If you like to play in first person more often, you will probably want to increase your FoV to 75 degrees or more.</p>
 <em>Recommended</em>
 <pre>
 [Display]
 fDefault1stPersonFOV=75.0
 fDefaultWorldFOV=75.0
-</pre>
+</pre> -->
 
 
 
@@ -199,23 +236,32 @@ bVATSDisable=1
 <em>Optional</em>
 <pre>
 [Display]
-fSunShadowUpdateTime=0
-fSunUpdateThreshold=2.0
+fSunShadowUpdateTime=0.25
+fSunUpdateThreshold=1.5 
 </pre>
 
 <p><strong>Torch/Light Source Pop-In</strong> - Enable a higher distance for the drawing of torches/light sources. Default in the game is 1024, which is pretty close.</p>
 <em>Optional</em>
 <pre>
 [General]
-fFlickeringLightDistance=4096
+fFlickeringLightDistance=2048
 </pre>
 
 <hr>
 
+<p><strong>Bow/Crossbow Aim Fix</strong> - Align your arrows and bolts to aim towards the center of your targeting reticule</p>
+<em>Optional</em>
+<pre>
+[Combat]
+f1PArrowTiltUpAngle=0.7 
+f3PArrowTiltUpAngle=0.7 
+f1PBoltTiltUpAngle=0.7 
+f3PBoltTiltUpAngle=0.7
+</pre>
 
 
 <!-- SKYRIM PREFS INI -->
-<h3 id="initweaks2">SkyrimPrefs.ini</h3>
+<h3 id="initweaks2">SkyrimPrefs.ini Tweaks</h3>
 <p>Change these the Skyrim.ini file with a text editing program (such as Notepad) to tweak certain settings. The text in brackets (eg [General]) is that section's header.</p>
     
 <p>The location of this file, by default, is something like this: <br />
@@ -223,14 +269,14 @@ fFlickeringLightDistance=4096
     
 <p>SkyrimPrefs.ini has parameters that control other configuration options in Skyrim. Much like editing Skyrim.ini in the section before, these tweaks are optional.</p>
 
-<p><strong>For ENB users only - bFloatPointRenderTarget</strong> - This tweak is required for ENBs to properly use floating point rendering which allows the enhanced graphical effects, such as SSAO, DoF and more. Setting this to <code>1</code> will cause a small performance hit.</p>
+<p><strong>For ENB users only - bFloatPointRenderTarget</strong> - This tweak is required for ENBs to properly use floating point rendering which allows the enhanced graphical effects, such as SSAO, DoF and more. Setting this to <strong>1</strong> will cause a small performance hit.</p>
 <em>Enable if using ENB</em>
 <pre>
 [Display]
 bFloatPointRenderTarget=1
 </pre>
 
-<p><strong>Shadow Map Resolution</strong> - Bit of a tweak to reduce the exessive iShadowMapResolution that is set to 4096 by the Ultra graphic setting. You lose hardly any shadow graphical quality, but gain a big increase in performance.</p>
+<p><strong>Shadow Map Resolution</strong> - Bit of a tweak to reduce the excessive iShadowMapResolution that is set to 4096 by the Ultra graphics setting. You hardly lose any shadow graphical quality, but gain a big increase in performance.</p>
 <em>Strongly recommended, performance gain</em>
 <pre>
 [Display]
@@ -245,7 +291,15 @@ bDrawLandShadows=1
 bTreesReceiveShadows=1
 </pre>
 
-<p><strong>Shadow and Grass Distance Fade</strong> - This tweak pushes back the distance for grass and shadows to fade. Minor performance hit.</p>
+<!--Don't like quest markers? Want to be rid of them forever? You don't need a mod filled with incompatibilities anymore.
+
+In SkyrimPrefs.ini under the GamePlay section:
+
+bShowFloatingQuestMarkers=0 (default 1)
+bShowQuestMarkers=0 (default 1)-->
+
+
+<!--<p><strong>Shadow and Grass Distance Fade</strong> - This tweak pushes back the distance for grass and shadows to fade. Minor performance hit.</p>
 <em>Optional, small performance hit</em>
 <pre>
 [Display]
@@ -253,7 +307,7 @@ fShadowLODStartFade=400.0000
 
 [Grass]
 fGrassStartFadeDistance=18000
-</pre>
+</pre>-->
 
 <p><strong>Disable Mouse Acceleration</strong> - Simply disables mouse acceleration.</p>
 <em>Optional</em>
@@ -275,7 +329,7 @@ bMouseAcceleration=0
 
 <p>
     <strong>Bad performance?</strong><br />
-    Disable HD texture mods if your video card does not have much VRAM. Another thing to decrease are shadow settings, then resolution. Both of these are the main hogs of performance. Also, if you use an ENB, you may want to tone the ENB graphical effects down, or turn them off completely.
+    Disable HD texture mods if your video card does not have much VRAM. Another thing to decrease are shadow settings and maybe your resolution. Both of these are the main hogs of performance. Also, if you use an ENB, you may want to tone the ENB graphical effects down (such as Depth of Field, Detailed Shadows, sunrays, Ambient Occlusion, etc), or turn them off completely.
 </p>
 
 <!-- last paragraph, endorse reminder -->

@@ -15,6 +15,21 @@ a {
     color: #306ECB;
 }
 
+/* table stuff */
+.table > td {
+    width: 15%;
+}
+body > div.container > div > table > thead > tr > th:nth-child(1), 
+ body > div.container > div > table > tbody > tr > td:nth-child(1)  {
+    width: 15%;
+    text-align: center;
+}
+body > div.container > div > table > thead > tr > th:nth-child(3),
+ body > div.container > div > table > tbody > tr > td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+}
+
 .my-footer {
     background-color: #eee; border-top: 1px solid #aaaaaa;
 }
@@ -31,17 +46,7 @@ a {
                   1px 1px 0 #000;
 }
 
-#carousel-example-generic {
-    border: 1px solid #aaaaaa;
-}
 
-.carousel-caption {
-    font-family: TrajanPro;
-}
-.carousel-caption {
-    top: 0;
-    bottom: auto;
-}
 .container {
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
@@ -99,7 +104,7 @@ td {
     text-align: left;
 }
 td.footer-table {
-    padding: 10px;
+    padding-right: 10px;
 }
 
 /* for flat look on navbar */

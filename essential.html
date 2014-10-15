@@ -9,7 +9,8 @@
     <title>ModdingForge-Skyrim</title>
     <meta name="author" content="insane0hflex, insaneOhflex, sputternaut" />
     <meta name="description" content="Skyrim modding guide featuring the best mods for Skyrim and tutorials." />
-    <meta name="keywords" content="skyrim mods, moddingforge, modding forge, modding forge skyrim, insane0hflex, insaneOhflex" />    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="skyrim mods, moddingforge, modding forge, modding forge skyrim, insane0hflex, insaneOhflex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="img/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 <style>
@@ -34,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker copy.png" height="25" width="25"><strong>ModdingForge</strong></a>
+          <a class="navbar-brand" href="index.html"><img src="img/65px-Hard_Worker_copy.png" height="25" width="25">&nbsp;<strong>ModdingForge</strong></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -52,12 +53,20 @@
     <div class="container">
         <div>
             <h1>The Essentials</h1>
+            <p>
+                The following mods do not alter the gameplay mechanics of Skyrim significantly. Mods that do significantly alter gameplay mechanics are discussed in the <a href="moremods.html">More Mods</a> section.
+            </p>
+            <!--<p>
+                I suggest you download all of the mods mentioned here, and then run through the <a href="#installProcess">installation process</a> I describe at the bottom.
+            </p>-->
         </div>
-        <p>These mods are what I consider the "Essential, Must Have mods" that I have <a target="_blank" href="http://www.reddit.com/r/skyrim/comments/1ikhrs/the_list_of_the_best_must_have_mods_for_skyrim/">detailed previously</a> in a few <a target="_blank" href="http://www.reddit.com/r/skyrim">r/skyrim</a> Reddit posts.</p>
+
+        
+        <!--<p>These mods are what I consider the "Essential, Must Have mods" that I have <a target="_blank" href="http://www.reddit.com/r/skyrim/comments/1ikhrs/the_list_of_the_best_must_have_mods_for_skyrim/">detailed previously</a> in a few <a target="_blank" href="http://www.reddit.com/r/skyrim">r/skyrim</a> Reddit posts.</p>-->
 
         <div class="alert alert-warning alert-dismissable">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            Make sure you have the latest version of SKSE and SkyUI installed before you continue. Please see <a target="_blank" href="gettingstarted.html">Getting Started</a> for instructions if you do not have SKSE or SkyUI installed and working properly.
+            Make sure you have the latest version of SKSE, LOOT, and Wrye Bash installed before you continue. Please see <a href="gettingstarted.html">Getting Started</a> for instructions.
         </div>
 
         <hr>
@@ -66,26 +75,49 @@
         <!--        brodualvid = insert link to broduals video of that mod -->
         <!--        myvid = insert link to my video of that mod -->
         <!-- TODO: replace all youtube icons with thumbnails -->
-        <!-- for those mods without videos yet use nexus icon -->
+        <!-- for those mods without videos yet use photos that redirect to author's mod pictures -->
 
 
-        <h1>Unofficial Skyrim Patches</h1>
-        <p>These Unofficial patches are community made patches for Skyrim and the various DLCs. They fix bugs, reduce crashes, improve stability, and may improve performance.</p>
-        <ul>
-            <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/19/?">Unofficial Skyrim Patch</a></li>
-            <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/23491">Unofficial Dawnguard Patch</a></li>
-            <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/31083/">Unofficial Dragonborn Patch</a></li>
-            <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/25127/">Unofficial Hearthfire Patch</a></li>
-            <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/31255/">Unofficial High Resolution Texture DLC Patch</a></li>
-        </ul>
+        <!--
+            Categories:
+                User Interface
+                Visuals/Graphics/Models/Textures
+                ENB
+                Immersion 
+                    - Audio mod too? Instead of Audio having its own section    
+                Gameplay
+                    - deadly dragons or something
+                    - apoc spell package/thunderchild
+                Weapons and Armors? 
+                    - Both are just Immersive Armors...maybe just add to Immersion or Gameplay category
+                Followers/Companions? 
+                    - not really essential...zzz
+        -->
 
-        <hr>
+        <!-- FUTURE ENHANCEMENTS:
+                - list video length something like -  Video (0:33)
+                
+        -->
+
+            <div class="panel panel-default">
+            <div class="panel-heading">Unofficial Skyrim Patches</div>
+                <ul>
+                    <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/19/?">Unofficial Skyrim Patch</a></li>
+                    <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/23491">Unofficial Dawnguard Patch</a></li>
+                    <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/31083/">Unofficial Dragonborn Patch</a></li>
+                    <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/25127/">Unofficial Hearthfire Patch</a></li>
+                    <li><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/31255/">Unofficial High Resolution Texture Patch</a> <span style="color: #444444;">(only use if you are using the Official High Resolution Texture DLCs)</span></li>
+                </ul>
+        </div>
+
+
+        <hr />
 
         <!------------->
         <!-- ui mods -->
         <!------------->
         <!--<h1>User Interface Mods</h1>-->
-       
+
 
         <div class="panel panel-default">
             <div class="panel-heading">User Interface Mods</div>
@@ -100,39 +132,41 @@
                 <tbody>
                     <tr>
                         <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/3863">SkyUI</a></td>
-                        <td>Completely overhauls the UI of Skyrim's inventory menus & more to look and perform a TON better. MUST HAVE!</td>
-                        <td><a href="https://www.youtube.com/watch?v=WghdKwGKeo4#">Video</a></td>
+                        <td>Completely overhauls the UI of Skyrim's inventory menus and more to improve the user's experience, especially those using mouse and keyboard.</td>
+                        <td><a href="https://www.youtube.com/watch?v=WghdKwGKeo4#">Video by insane0hflex</a></td>
                     </tr>
                     <tr>
                         <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/3222">iHUD</a></td>
-                        <td>Hides the HUD when you don't need it, shows the HUD when you do need it! Clean, effective, and immersive.</td>
+                        <td>Hides the HUD when you don't need it, shows the HUD when you do need it! Clean, effective, and immersive. Also made by the legendary <a href="http://www.youtube.com/GophersVids" target="_blank">Gopher</a>!</td>
                         <td><a href="https://www.youtube.com/watch?v=6ueBVU8j_SU" target="_blank">Video by Gopher</a></td>
                     </tr>
                     <tr>
                         <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/4929">AQWMWR</a></td>
                         <td>A Quality World Map - With Roads (AWQMWR) is a mod that adds the roads, trails, and paths of Skyrim to the World Map.</td>
-                        <td><a target="_blank" href="https://www.youtube.com/watch?v=kOP8KuL-8TY#t=178s">Video</a></td>
+                        <td><a target="_blank" href="https://www.youtube.com/watch?v=kOP8KuL-8TY#t=178s">Video by insane0hflex</a></td>
                     </tr>
                     <tr>
-                        <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/32695">Better Quest Objectives</a></td>
-                        <td>Mod that adds more text information to your journal of many quests. Better for immersion.  If you like to play without quest markers, this mod is a must have, because the text descriptions of quests in Skyrim are sometimes atrocious and depend entirely upon the quest marker system.</td>
-                        <td><a target="_blank" href="http://www.youtube.com/watch?&v=y7ZioZYqsGw">Video</a></td>
+                        <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/32695">Even Better Quest Objectives</a></td>
+                        <td>This mod alters the text descriptions of quests in Skyrim to provide locations and details of events in quests so that you do not have to rely on the quest marker to show you where the next objective is located.</td>
+                        <td><a target="_blank" href="http://www.youtube.com/watch?&v=y7ZioZYqsGw">Video by insane0hflex</a></td>
                     </tr>
+                    <!-- problems with unique region hold names and maybe the some other mods
+                        <tr>
+                        <td></td>
+                        <td align="center">
+                            Optional - A rather dated video - Showcase of the Best <a target="_blank" href="http://www.youtube.com/watch?v=WghdKwGKeo4">User Interface (UI) mods</a>
+                        </td>
+                        <td></td>
+                    </tr>-->
                 </tbody>
             </table>
-            <p class="panel-paragraph">Optional! (Dated video) - Showcase of the Best <a target="_blank" href="http://www.youtube.com/watch?v=WghdKwGKeo4">User Interface (UI) mods</a></p>
+            
         </div>
         <hr>
 
         <!-- graphics/visuals -->
         <!-- graphics/visuals -->
         <!-- graphics/visuals -->
-        <!-- <div class="panel panel-default">
-        <div class="panel-heading">Player Home Mods</div> -->
-        
-
-
-            <p> <strong>Optional (may be outdated information/mods) </strong><a target="_blank" href="http://www.youtube.com/watch?v=KxZAp3-UYZM">Skyrim Mod Collection: Enhanced Distant Terrain and other Distant Detail Mods</a> - This video is like the UI collection one, but enhances the distant objects and details of Skyrim to look a lot better.</p>
         <div class="panel panel-default">
         <div class="panel-heading">Visuals and Graphics</div>
         <table class="table">
@@ -144,8 +178,7 @@
                 </tr>
             </thead>
             <tbody>
-                <!--
-                <tr>
+            <!--<tr>
                 <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/24273">Ethereal Elven Overhaul</a></td>
                 <td>Ethereal Elven Overhaul is a comprehensive revamp of the elf races of Skyrim. It alters every aspect of their facial features to a more appealing look, while remaining faithful to the original work and striving for realism. EEO also affects every elven NPC in the game and comes with new presets.</td>
                 <td><a target="_blank" href="http://www.youtube.com/watch?&v=2cCsUCrUv9I">Video</a></td>
@@ -157,19 +190,16 @@
                     <td>If you want a custom hair style, this is the most commonly used hair mod. Adds dozens of new, high-quality hairstyles to males and females. Note: This mod is optional, and <em>only</em> styles your character's hair.</td>
                     <td><a target="_blank" href="http://www.youtube.com/watch?v=6wSAjt-d4C0">Video</a></td>
                 </tr>
-
-                <tr>
-                    <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/60">Enhanced Blood Textures</a></td>
-                    <td>Stellar mod that adds better blood effects and new ones too. Very highly recommended.</td>
-                    <td><a href="http://www.youtube.com/watch?v=BzAWv_JAb5I" target="_blank">Video by Brodual</a></td>
-                </tr>
-
                 <tr>
                     <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/35399">Book Covers</a></td>
                     <td>Book Covers is a mod that gives books a colorful, designed, unique cover. Simple, but incredible mod.</td>
                     <td><a target="_blank" href="http://www.youtube.com/watch?v=olwgj59Q3PQ">Video</a></td>
                 </tr>
-
+                <tr>
+                    <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/60">Enhanced Blood Textures</a></td>
+                    <td>Stellar mod that adds better blood effects and new ones too. Very highly recommended.</td>
+                    <td><a href="http://www.youtube.com/watch?v=BzAWv_JAb5I" target="_blank">Video by Brodual</a></td>
+                </tr>
                 <!--<tr>
                     <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/18799">RaUPaP HD</a></td>
                     <td>Radiant and Unique Potions and Poisons HD adds custom labels/designs to all potions and poisons in Skyrim. Now you can identify a potion at a glance just by looking at the label on it!</td>
@@ -181,13 +211,11 @@
                     <td>Replaces the textures of alcoholic beverages with labels/designs in a simlar fashion like RaUPaP HD.</td>
                     <td><a target="_blank" href="http://www.youtube.com/watch?v=1KQDwhcsujI">Video</a></td>
                 </tr>-->
-
                 <tr>
                     <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/2356">XCE</a></td>
-                    <td>XCE - Xenius Character Enhancement mod that makes the skin textures of NPCs and your character look much better. Without this mod you'll have blocky NPC faces!</td>
+                    <td>XCE - Xenius Character Enhancement mod that makes the skin textures of NPCs and your character with much better textures. Without this mod characters within the game will not look very good.</td>
                     <td>N/A</td>
                 </tr>
-
                 <tr>
                     <td><a target="_blank" href="http://www.nexusmods.com/skyrim/mods/42492">Realistic Sun</a></td>
                     <td>A great realistic sunglare/sun texture. Use the vanilla version. If you install Climates of Tamriel (mentioned in the "more mods" page), use the CoT version.</td>
@@ -208,6 +236,13 @@
 
             </tbody>
         </table>
+
+    <!--<p>
+        <strong>Optional (may be outdated information/mods) </strong><a target="_blank" href="http://www.youtube.com/watch?v=KxZAp3-UYZM">Skyrim Mod Collection: Enhanced Distant Terrain and other Distant Detail Mods</a> - This video is like the UI collection one, but enhances the distant objects and details of Skyrim to look a lot better.
+    </p>-->
+
+
+
     </div>
         <!------- end of graphic enhancing mods -->
         <hr>
@@ -219,16 +254,17 @@
         <div class="panel-heading">ENB Presets</div> -->
         <div class="panel panel-default">
             <div class="panel-heading">ENB Presets</div>
-            <p>For a very long time, I used <a href="http://www.nexusmods.com/skyrim/mods/17326/?" target="_blank">Enhanced Vanilla ENB</a>, which I used exclusively for over 400 videos. Enhanced Vanilla ENB stays true to Skyrim's original lighting, but gives you the option to add in nice ENB related effects, such as depth of field, godrays, detailed shadows, shadow fixes, Ambient Occlusion (SSAO), bloom, etc.</p>
-            <p>However, if you are looking for a performanc friendly ENB that makes Skyrim more fantastical - try out <a href="http://www.nexusmods.com/skyrim/mods/22056/?" target="_blank">RealLike ENB v0113</a>. I just started using this ENB preset and love it. Color saturation is up, daylight conditions look like daylight, stormy weather looks great, and nights can be bright, dark, or light depending on your choice. Here is a <a href="" target="">video of RealENB in action</a>.</p>
-            <p>If those two options don't interest you, take a look at<a target="_blank" href="http://www.youtube.com/Hodilton">Hodilton's</a> channel. Hodilton makes great videos of ENB Presets, so browse throughout the ENB videos to find one that you like.</p>
+            <div style="padding:5px;padding-right:10px;padding-left:10px;">
+                <p>For a very long time, I used <a href="http://www.nexusmods.com/skyrim/mods/17326/?" target="_blank">Enhanced Vanilla ENB</a>, which I used exclusively for over 400 videos. Enhanced Vanilla ENB stays true to Skyrim's original lighting, but gives you the option to add in nice ENB related effects, such as depth of field, godrays, detailed shadows, shadow fixes, Ambient Occlusion (SSAO), bloom, etc.</p>
+                <p>However, if you are looking for a performance friendly ENB that makes Skyrim more "fantastical" - try out <a href="http://www.nexusmods.com/skyrim/mods/22056/?" target="_blank">RealLike ENB v0113</a>. I just started using this ENB preset and love it. Here is a <a href="" target="">video of RealENB in action</a>. You may want to tone down the sun's brightness by editing the <code>enbseries.ini</code> file - find this line <code>SunCoronaIntensity=6.0</code> and change it to <code>SunCoronaIntensity=2.0</code>.</p>
+                <p>If those two options don't interest you, check out <a target="_blank" href="http://www.youtube.com/Hodilton">Hodilton's YouTube channel</a>. Hodilton makes great videos of ENB Presets, and other mods too, so browse throughout the ENB videos to find one that you like.</p>
+            </div>
         </div>
 
-
-            <hr>
-            <!------------->
-            <!--immersion-->
-            <!------------->
+        <hr>
+        <!------------->
+        <!--immersion-->
+        <!------------->
         <div class="panel panel-default">
         <div class="panel-heading">Immersion and Realism Mods</div>
             <table class="table">
@@ -270,23 +306,26 @@
                         <td>Now when you walk in snow, mud, and on other soft surfaces, you leave footprints behind!</td>
                         <td><a target="_blank" href="http://www.youtube.com/watch?v=8MnUlMAY790">Video</a></td>
                     </tr>
+                    <tr>
+                        <td><a href="#">Enhanced Camera</a></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
             <hr>
+        <!-- end of immersion mods -->
 
 
-            <!-- audio -->
-            <!-- audio -->
-            <!-- audio -->
-            <!-- look into audio mods here -->
 
-            <div class="alert alert-warning"><strong>Note:</strong> The following mods below are optional! Only install the ones that interest you.</div>
-            <hr>
+        <div class="alert alert-warning">
+            <strong>Note:</strong> The following mods are optional. You can just install the ones that interest you, although they are highly recommended.
+        </div>
+        <hr>
 
-            <!-- gameplay -->
-            <!-- gameplay -->
-            <!-- gameplay -->
+        <!-- gameplay -->
+        <!-- gameplay -->
+        <!-- gameplay -->
         <div class="panel panel-default">
             <div class="panel-heading">Gameplay Mods</div>
             <table class="table">
@@ -298,34 +337,24 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!--<tr>
                         <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/9557">Alternate Start - Live Another Life</a></td>
                         <td>This mod gives you a variety of choices for a new playthrough. Instead of starting in Helgen - You'll start in a cell where you'll customize your character (race, gender, face, etc), then you'll choose an unique start other than the Helgen/vanilla intro sequence. Great for roleplaying!</td>
                         <td>N/A</td>
-                    </tr>
-                    <tr>
-                        <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/16225">Apocalypse Spell Package</a></td>
-                        <td>Apocalypse Spell Package adds over 170+ fair and balanced spells across each school of magic. A great mod for mages and spellswords.</td>
-                        <td><a target="_blank" href="http://www.youtube.com/watch?v=XsRSogpIDGw">Video</a></td>
-                    </tr>
+                    </tr>-->
 
-                    <tr>
-                        <td><a target="_blank" href="http://skyrim.nexusmods.com/mods/11163">Frostfall</a></td>
-                        <td><strong>OPTIONAL</strong>: Ultimate survival roleplaying mod. Recommended for hardcore realism players. Basic premise is that you'll need to prepare yourself for the cold, extreme climates of Skyrim - making fires, keeping warm, and not freezing to death.</td>
-                        <td><a target="_blank" href="http://www.youtube.com/watch?v=UR5FVQCkyVA">Video</a></td>
-                    </tr>
                 </tbody>
             </table>
         </div>
             <hr>
 
-            <!-- Armor/Weapon mods -->
-            <!-- Armor/Weapon mods -->
-            <!-- Armor/Weapon mods -->
+        <!-- Armor/Weapon mods -->
+        <!-- Armor/Weapon mods -->
+        <!-- Armor/Weapon mods -->
 
         <div class="panel panel-default">
             <div class="panel-heading">Weapon/Armor Mods</div>
-            <strong>Note:</strong> if you do decide to install both Immersive Armors and Immersive Weapons, you will need to use Wrye Bash to create a Bashed Patch to see the items added by the mods in game. Otherwise, whichever file is loaded last will be used in the leveled lists.
+            <strong>Note:</strong> if you do decide to install both Immersive Armors and Immersive Weapons, you will need to use <a href="gettingstarted.html#WryeBash">Wrye Bash to create a Bashed Patch </a> to see the items added by the mods in game. Otherwise, whichever file is loaded last will be used in the leveled lists.
             <table class="table">
                 <thead>
                     <tr>
