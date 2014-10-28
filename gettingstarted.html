@@ -78,7 +78,7 @@
             <p><strong>Before you proceed complete the following steps:</strong></p>
             <ol>
                 <li>
-                    This guide assumes that you have a fresh install (eg: no mods at all) of the Legendary version of Skyrim (aka all DLCs). If you do not have all the DLCs, you could most likely complete the rest of the guide with no issues.
+                    This guide assumes that you have a fresh install (no mods at all) of the Legendary version of Skyrim (all DLCs). If you do not have all the DLCs, you could most likely complete the rest of the guide with no issues.
                 </li>
                 <li>
                     Know where your Skyrim installation is located. Usually this is something like:
@@ -88,7 +88,7 @@
                 <li>
                     Next, if you just downloaded Skyrim,
                     <strong>make sure you start the game first before modding</strong>. On the launcher, select the
-                    <strong>Ultra</strong> graphics setting, set the resolution, antialiasing and anistropic filtering to your preference, then start the game. On the main menu screen, exit Skyrim. This is to make sure that Skyrim generates the
+                    <strong>Ultra</strong> graphics setting, set the resolution, and turn off antialiasing, anistropic filtering, and FXAA. Now, start the game. On the main menu screen, exit Skyrim. This is to make sure that Skyrim generates the
                     <code>Skyrim.ini</code> and the
                     <code>SkyrimPrefs.ini</code> files correctly. These are located by default here:
                     <code>C:\Users\%YOUR_USER_NAME%\Documents\My Games\Skyrim\</code>
@@ -108,7 +108,7 @@
             <li class="list-group-item"><a href="#LOOT">LOOT - Load Order Optimization Tool</a></li>
             <li class="list-group-item"><a href="#NMM">Nexus Mod Manager - NMM</a></li>
             <!--<li class="list-group-item"><a href="#SkyUI">SkyUI</a></li>-->
-            <li class="list-group-item"><a href="#WryeBash">WryeBash</a></li>
+            <li class="list-group-item"><a href="#WryeBash">Wrye Bash</a></li>
             <li class="list-group-item"><a href="#TES5Edit">TES5Edit</a></li>
             <li class="list-group-item"><a href="#initweaks">Skyrim.ini Tweaks</a></li>
             <li class="list-group-item"><a href="#initweaks2">Skyrimprefs.ini Tweaks</a></li>
@@ -124,10 +124,9 @@
             You will know if SKSE is working properly if you have a SKSE message when you open the menu in Skyrim, as shown in <a href="img/skse_on.jpg" target="_blank">this screenshot</a>.
         </p>
 
-        <p>After you download SKSE and install SKSE, go to your /skyrim/Data/ folder. Create a new folder called "SKSE". Within this new folder, make a new text file named <code>skse.ini</code>. </p>
+        <p>After you download SKSE and install SKSE, go to your /skyrim/Data/ folder. Create a new folder called "SKSE". Within this new folder, make a new file named <code>skse.ini</code>.</p>
         <p>
-            In order to enable sheshon's memory fix, put into the new
-            <code>skse.ini</code> file you create the following code:
+            Then, open this file with Notepad and put in the following code:
 <pre>
 [General]
 ClearInvalidRegistrations=1
@@ -143,7 +142,7 @@ ScrapHeapSizeMB=256</pre>
         <hr>-->
 
         <h3 id="LOOT">Load Order Optimization Software (LOOT)</h3>
-        <p>Description of LOOT from the <a href="http://loot.github.io/">LOOT download page</a>:</p>
+        <p>Description of LOOT from the <a href="http://loot.github.io/" target="_blank">LOOT download page</a>:</p>
         <blockquote style="font-size: inherit; background-color:#f6f6f6;">
             <p>
                 Setting the right load order for your mods is a crucial step to enjoying a stable modded game. The Load Order Optimisation Tool (LOOT) can help with that, by providing automated load order sorting that's simple to use and fully customisable.
@@ -153,7 +152,7 @@ ScrapHeapSizeMB=256</pre>
             </p>
         </blockquote>
         <p>
-            Basically, you run LOOT to organize the load order of your mods so that you don't run into CTDs and such. You should run LOOT after installing any mod. Also, be sure to read the mod descriptions to see if that particular mod should be loaded last/after another certain mod, because LOOT is not perfect.
+            Basically, you run <a href="http://loot.github.io/" target="_blank">LOOT</a> to organize the load order of your mods so that your game won't crash. You should run LOOT after installing any mod. Also, make sure to read the mod descriptions to see if that particular mod should be loaded last/after another certain mod, because LOOT is not perfect.
         </p>
         <p>
             If you've heard about BOSS, it is no longer being supported. LOOT is the successor to BOSS.
@@ -163,7 +162,7 @@ ScrapHeapSizeMB=256</pre>
 
         <h3 id="NMM">Nexus Mod Manager (NMM)</h3>
         <p>
-            Now, to easily install most of these mods, get the <a href="http://skyrim.nexusmods.com/mods/modmanager/">Nexus Mod Manager (NMM)</a>. With NMM, you can download mods with a click of a button from the Skyrim Nexus website, then install and uninstall mods easily. NMM is highly recommended because of the automated installation process.
+            Now, to make mod installation easy, download <a href="http://skyrim.nexusmods.com/mods/modmanager/">Nexus Mod Manager (NMM)</a>. With NMM you can download mods with a click of a button from the Skyrim Nexus website, which makes installing and uninstalling mods very easy.
         </p>
 
         <hr />
@@ -173,16 +172,17 @@ ScrapHeapSizeMB=256</pre>
         <hr />
             -->
 
-        <h3 id="WryeBash">WryeBash</h3>
+        <h3 id="WryeBash">Wrye Bash</h3>
+        <p>Download the "Installer" version of <a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/?">Wrye Bash</a>. You will need to use Wrye Bash after you download the mods listed in <a href="essential.html" target="_blank">The Essentials</a> section.</p>
         <p>
-            WryeBash was a tool that is used mainly for modding Oblivion. You can still use it to be a mod installer/organizer of sorts for Skyrim still, but it's main feature we want to use is the
+            Wrye Bash was a tool that is used mainly for modding Oblivion. You can still use it to be a mod installer/organizer of sorts for Skyrim still, but it's main feature we want to use is the
             <strong>Bashed Patch</strong> feature. With the
             <strong>Bashed Patch</strong> feature, we can merge the leveled lists of mods together. When different plugins alter the same leveled list, only the last loaded plugin's changes get applied. The leveled list patcher circumvents the issue by instead merging all the changes made to leveled lists and having this merged set of changes applied.
         </p>
         <p>
             You should rebuild your Bashed Patch every time you change your load order. The Bashed Patch should also be last in the load order list <em>unless</em> you have plugins that explicitly state that they must be loaded last.
         </p>
-        <p>Download the "Installer" version of <a target="_blank" href="http://www.nexusmods.com/skyrim/mods/1840/?">Wrye Bash</a>.</p>
+        
         <strong>Steps to create a Bashed Patch with Wrye Bash (do this after completing the <a href="essential.html">Essentials</a> section):</strong>
 
         <!-- Import Names	Oblivion only. Preserves the changes made to various names throughout the game by the mods selected.	The decision is entirely based on user preference. Choose whichever mods' names you prefer.
@@ -193,7 +193,7 @@ ScrapHeapSizeMB=256</pre>
             -->
         <ol>
             <li>
-                Run Wrye Bash.exe. On the
+                Run WryeBash.exe. On the
                 <strong>Mods</strong> tab, select
                 <strong>Bashed Patch, Skyrim.esp</strong>, then right-click and select
                 <strong>Rebuild Patch</strong>.
@@ -205,7 +205,7 @@ ScrapHeapSizeMB=256</pre>
                 Check <strong>Import Stats</strong>. Make sure that all the Unofficial patches are checked.
             </li>
             <li>
-                If <strong>Tweaks</strong> is checked, uncheck it.[]
+                If <strong>Tweaks</strong> is checked, uncheck it.
             </li>
             <li>
                 Check
@@ -221,7 +221,7 @@ Dawngaurd.esm [AD]
                 Click <strong>Build Patch</strong>.
             </li>
             <li>
-                You're done! Don't forget that you should rebuild your Bashed Patch every time you change your load order.
+                You're done! Don't forget that you should rebuild your Bashed Patch every time your load order changes, like when you install or uninstall mods or run LOOT to sort the load order of your mods.
             </li>
         </ol>
 
@@ -230,7 +230,9 @@ Dawngaurd.esm [AD]
         <hr>
 
         <h3 id="TES5Edit">TES5Edit</h3>
-        <p>TES5Edit is a tool that I have not used a lot, but mod creators do use TES5Edit to remove bad data/record changes ("dirty edits") that were made by accident or to sometimes patch other mods together. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.</p>
+        <p>
+            TES5Edit is a tool that I have not used a lot, but mod creators do use TES5Edit to remove bad data/record changes ("dirty edits") that were made by accident or to sometimes patch other mods together. More documentation is here: <a target="_blank" href="http://www.creationkit.com/Category:TES5Edit">http://www.creationkit.com/Category:TES5Edit</a>.
+        </p>
         <p>
             You can use TES5Edit to remove the dirty edits that Bethesda left in Skyrim.esm, Dawnguard.esm, Dragonborn.esm, and Hearthfire.esm. You can also use TES5Edit to remove dirty edits in other mods you download, but in my experience TES5Edit is for more advanced users or mod makers. Therefore, don't worry about cleaning your <code>.esm</code> files.
         </p>
@@ -244,7 +246,7 @@ Dawngaurd.esm [AD]
         <!-- SKYRIM INI TWEAKS -->
         <h3 id="initweaks">Skyrim.ini Tweaks</h3>
 
-        <p>Edit Skrim.ini with a text editing program(like Notepad) with the following tweaks. Some tweaks are strongly recommended, others are optional. The text in brackets (eg:[General]) is that section's header. Do not create a section's header (eg: [General]) if it exists already.</p>
+        <p>Edit Skrim.ini with a text editing program (like Notepad) with the following tweaks. Some tweaks are strongly recommended, others are optional. The text in brackets (eg:[General]) is that section's header. Do not create a section's header (eg: [General]) if it exists already.</p>
 
         <p>
             The location of this file, by default, is this:
@@ -284,8 +286,6 @@ fSunUpdateThreshold=1.5
 [General]
 fFlickeringLightDistance=4096
 </pre>
-
-        <hr>
 
         <p><strong>Bow/Crossbow Aim Fix</strong> - Align your arrows and bolts to aim towards the center of your targeting reticule</p>
         <em>Optional</em>
