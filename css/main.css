@@ -74,6 +74,7 @@ tr:nth-child(even) {
     margin: 0 auto 0 auto;
     background: none;
     text-align: left;
+    padding-bottom: 5px;
 }
 
 /* puts soft backround on table header */
