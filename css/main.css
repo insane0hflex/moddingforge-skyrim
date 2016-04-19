@@ -1,6 +1,5 @@
-/* ==========================================================================
-   My custom styles
-   ========================================================================== */
+/* Custom styles for ModdingForge-Skyrim */
+/* Some of these overwrite bootstrap styles so it is/should be the last loaded/linked css file */
 
 body {
     color: #000;
