@@ -13,7 +13,7 @@ Code (HTML/CSS) was made when I was still learning HTML/CSS/Javascript and the B
 
 
 ##ToDOs:
-
+- Update with Skyrim Remastered updates on 10/28/2016 (well, shortly after, for mod compatibility)
 - update with newer released mods - from like 2014+
 - enb guide or something
 
