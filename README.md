@@ -14,7 +14,7 @@ Code (HTML/CSS) was made when I was still learning HTML/CSS/Javascript and the B
 
 ##ToDOs:
 - Update with Skyrim Remastered updates on 10/28/2016 (well, shortly after, for mod compatibility)
-- Update with "Best Mods for Consoles section/links
+- Update with "Best Mods for Consoles" section/links - or just basic info on like "Search for this mod on Bethesda.net mods" or something
 - update with newer released mods - from like 2014+
 - enb guide or something
 
